@@ -61,6 +61,16 @@ button:focus-visible {
     outline-offset: 4px;
 }
 
+.nav-list,
+.menu-grid,
+.benefits-grid,
+.review-grid,
+.footer-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -140,6 +150,11 @@ p {
 }
 
 .site-nav {
+    display: flex;
+    min-width: 0;
+}
+
+.nav-list {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-1);
@@ -422,6 +437,7 @@ p {
 }
 
 .rating {
+    display: block;
     margin-bottom: var(--space-2);
     color: var(--color-rust);
     letter-spacing: 0.08em;
@@ -504,6 +520,10 @@ p {
 }
 
 .footer nav {
+    min-width: 0;
+}
+
+.footer-nav-list {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-3);

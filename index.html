@@ -2,9 +2,16 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Java Café er en lokal kaffebar med specialkaffe, frisk bagværk og rolige rammer midt i byen.">
     <title>Java Café | Brænder byens bedste bønner</title>
+    <meta name="description" content="Java Café er en lokal kaffebar med specialkaffe, frisk bagværk og rolige rammer midt i byen.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Java Café | Brænder byens bedste bønner">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://java-cafe.example/">
+    <meta property="og:image" content="https://java-cafe.example/images/Cafe%20indenfor.jpg">
+    <meta property="og:description" content="Java Café er en lokal kaffebar med specialkaffe, frisk bagværk og rolige rammer midt i byen.">
+    <meta property="og:locale" content="da_DK">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,12 +24,14 @@
             </a>
 
             <nav class="site-nav" aria-label="Hovednavigation">
-                <a href="#forside">Forside</a>
-                <a href="#om-os">Om os</a>
-                <a href="#menu">Menu</a>
-                <a href="#galleri">Galleri</a>
-                <a href="#anmeldelser">Anmeldelser</a>
-                <a href="#kontakt">Kontakt</a>
+                <ul class="nav-list">
+                    <li><a href="#forside">Forside</a></li>
+                    <li><a href="#om-os">Om os</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#galleri">Galleri</a></li>
+                    <li><a href="#anmeldelser">Anmeldelser</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -33,7 +42,7 @@
             <img
                 class="hero-image"
                 src="images/Cafe indenfor.jpg"
-                alt="Varm kaffebar med træborde, grønne planter og en frisklavet kop kaffe i naturligt lys">
+                alt="Varmt caféinteriør med træbjælker, bardisk og gæster i naturligt lys">
             <div class="hero-content">
                 <p class="eyebrow">Specialkaffe midt i byen</p>
                 <h1 id="hero-title">Rolige øjeblikke, friskristede bønner.</h1>
@@ -54,7 +63,9 @@
                 <figure class="image-panel">
                     <img
                         src="images/Basrista.jpg"
-                        alt="Barista der tilbereder espresso ved en blank espressomaskine"
+                        alt="To baristaer arbejder ved kaffekværn og espressomaskine"
+                        loading="lazy"
+                        decoding="async"
                     >
                     <figcaption>Hver kop justeres efter bønnernes ristning, kværn og dagens temperatur.</figcaption>
                 </figure>
@@ -70,9 +81,9 @@
                     <p>En skarp menu med klassikere, sæsonfavoritter og bagværk fra morgenstunden.</p>
                 </div>
 
-                <div class="menu-grid">
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/4736078/pexels-photo-4736078.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Espresso i en lille hvid kop på et træbord">
+                <ul class="menu-grid">
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/4736078/pexels-photo-4736078.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Espresso i en lille hvid kop på et træbord" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Espresso</h3>
@@ -80,9 +91,9 @@
                             </div>
                             <span>32 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/16615598/pexels-photo-16615598.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cappuccino med latte art i en kop på cafébord">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/16615598/pexels-photo-16615598.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cappuccino med latte art i en kop på cafébord" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Cappuccino</h3>
@@ -90,9 +101,9 @@
                             </div>
                             <span>42 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/14018896/pexels-photo-14018896.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Café latte i en sort kop med blødt mælkeskum">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/14018896/pexels-photo-14018896.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Café latte i en sort kop med blødt mælkeskum" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Café Latte</h3>
@@ -100,9 +111,9 @@
                             </div>
                             <span>46 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/29372414/pexels-photo-29372414.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Flat white med fin latte art i en hvid kop">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/29372414/pexels-photo-29372414.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Flat white med fin latte art i en hvid kop" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Flat White</h3>
@@ -110,9 +121,9 @@
                             </div>
                             <span>44 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/17497896/pexels-photo-17497896.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Iced latte i et klart glas med mælk og kaffe i lag">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/17497896/pexels-photo-17497896.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Iced latte i et klart glas med mælk og kaffe i lag" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Iced Latte</h3>
@@ -120,9 +131,9 @@
                             </div>
                             <span>49 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/35024895/pexels-photo-35024895.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Chai latte med kanel i en kop på rustikt træbord">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/35024895/pexels-photo-35024895.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Chai latte med kanel i en kop på rustikt træbord" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Chai Latte</h3>
@@ -130,9 +141,9 @@
                             </div>
                             <span>48 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/3892469/pexels-photo-3892469.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Gylden croissant på et træbræt">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/3892469/pexels-photo-3892469.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Gylden croissant på et træbræt" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Smørristet croissant</h3>
@@ -140,9 +151,9 @@
                             </div>
                             <span>34 kr.</span>
                         </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-image" src="https://images.pexels.com/photos/9395564/pexels-photo-9395564.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bolle med ost serveret på en tallerken">
+                    </li>
+                    <li class="menu-card">
+                        <img class="menu-image" src="https://images.pexels.com/photos/9395564/pexels-photo-9395564.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bolle med ost serveret på en tallerken" loading="lazy" decoding="async">
                         <div class="menu-card-content">
                             <div>
                                 <h3>Surdejsbolle med ost</h3>
@@ -150,8 +161,8 @@
                             </div>
                             <span>45 kr.</span>
                         </div>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -163,23 +174,23 @@
                     <h2 id="benefits-title">Tre grunde til at kigge forbi.</h2>
                 </div>
 
-                <div class="benefits-grid">
-                    <article class="benefit-card">
+                <ul class="benefits-grid">
+                    <li class="benefit-card">
                         <span class="benefit-number">01</span>
                         <h3>Kaffe med omtanke</h3>
                         <p>Vi arbejder med bønner, der har tydelig oprindelse, og brygger dem med ro frem for rutine.</p>
-                    </article>
-                    <article class="benefit-card">
+                    </li>
+                    <li class="benefit-card">
                         <span class="benefit-number">02</span>
                         <h3>Plads til at blive</h3>
                         <p>Bløde siddepladser, gode arbejdsborde og en lyd, hvor både samtaler og fokus kan være med.</p>
-                    </article>
-                    <article class="benefit-card">
+                    </li>
+                    <li class="benefit-card">
                         <span class="benefit-number">03</span>
                         <h3>Frisk hver dag</h3>
                         <p>Vi holder menuen enkel og frisk med kaffe, bagværk og små serveringer, vi selv har lyst til at spise.</p>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -192,12 +203,12 @@
                 </div>
 
                 <div class="gallery-grid">
-                    <img class="gallery-large" src="https://images.pexels.com/photos/16050906/pexels-photo-16050906.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cappuccino med tydelig latte art på et træbord">
-                    <img src="images/Cafe indenfor.jpg" alt="Lyst caféinteriør med træmøbler og grønne planter">
-                    <img src="https://images.pexels.com/photos/34297775/pexels-photo-34297775.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Barista der damper mælk ved espressomaskinen">
-                    <img src="https://images.pexels.com/photos/9818871/pexels-photo-9818871.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kaffe og croissant serveret på en lille tallerken">
-                    <img src="https://images.pexels.com/photos/36729513/pexels-photo-36729513.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Venner der sidder omkring et lille cafébord med kaffe">
-                    <img src="https://images.pexels.com/photos/33456309/pexels-photo-33456309.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Hyggelig arbejdsplads med laptop, notesbog og kaffe">
+                    <img class="gallery-large" src="https://images.pexels.com/photos/16050906/pexels-photo-16050906.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cappuccino med tydelig latte art på et træbord" loading="lazy" decoding="async">
+                    <img src="images/Cafe indenfor.jpg" alt="Stemningsfuldt caféinteriør med træbjælker, bardisk og gæster" loading="lazy" decoding="async">
+                    <img src="https://images.pexels.com/photos/34297775/pexels-photo-34297775.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Barista der damper mælk ved espressomaskinen" loading="lazy" decoding="async">
+                    <img src="https://images.pexels.com/photos/9818871/pexels-photo-9818871.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kaffe og croissant serveret på en lille tallerken" loading="lazy" decoding="async">
+                    <img src="https://images.pexels.com/photos/36729513/pexels-photo-36729513.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Venner der sidder omkring et lille cafébord med kaffe" loading="lazy" decoding="async">
+                    <img src="https://images.pexels.com/photos/33456309/pexels-photo-33456309.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Hyggelig arbejdsplads med laptop, notesbog og kaffe" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
@@ -210,23 +221,23 @@
                     <h2 id="reviews-title">Det siger gæsterne.</h2>
                 </div>
 
-                <div class="review-grid">
-                    <article class="review">
-                        <p class="rating" aria-label="5 ud af 5 stjerner">★★★★★</p>
+                <ul class="review-grid">
+                    <li class="review">
+                        <p class="rating"><span role="img" aria-label="5 ud af 5 stjerner">★★★★★</span></p>
                         <blockquote>“Min faste pause mellem arbejde og hjem. Kaffen er altid god, og der er en rolig stemning uden at være stille.”</blockquote>
                         <p class="reviewer">Sofie</p>
-                    </article>
-                    <article class="review">
-                        <p class="rating" aria-label="5 ud af 5 stjerner">★★★★★</p>
+                    </li>
+                    <li class="review">
+                        <p class="rating"><span role="img" aria-label="5 ud af 5 stjerner">★★★★★</span></p>
                         <blockquote>“Deres flat white er præcis, som jeg håber på: stærk, blød og uden for meget mælk. Også virkelig venlig betjening.”</blockquote>
                         <p class="reviewer">Mikkel</p>
-                    </article>
-                    <article class="review">
-                        <p class="rating" aria-label="4 ud af 5 stjerner">★★★★☆</p>
+                    </li>
+                    <li class="review">
+                        <p class="rating"><span role="img" aria-label="4 ud af 5 stjerner">★★★★☆</span></p>
                         <blockquote>“Godt sted at sidde med laptop en formiddag. Surdejsbollen med ost er blevet lidt af en vane.”</blockquote>
                         <p class="reviewer">Amina</p>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -238,16 +249,18 @@
                     <h2 id="contact-title">Find os på hjørnet, hvor duften begynder.</h2>
                     <p>Kom forbi til morgenkaffe, tag en kop med på farten eller skriv til os, hvis du vil høre om bordreservation til et mindre møde.</p>
                     <div class="contact-actions">
-                        <a class="button button-primary" href="tel:+4532124490">Ring til Java Café</a>
+                        <a class="button button-primary" href="tel:+4532124490">Ring&nbsp;til&nbsp;Java&nbsp;Café</a>
                         <a class="button button-secondary" href="mailto:hej@javacafe.dk">Send en e-mail</a>
                     </div>
                 </div>
 
-                <address class="contact-card">
+                <div class="contact-card">
                     <h3>Java Café</h3>
-                    <p>Ristestien 14<br>8000 Aarhus C</p>
-                    <p><a href="tel:+4532124490">+45 32 12 44 90</a></p>
-                    <p><a href="mailto:hej@javacafe.dk">hej@javacafe.dk</a></p>
+                    <address>
+                        <p>Ristestien 14<br>8000 Aarhus C</p>
+                        <p><a href="tel:+4532124490">+45&nbsp;32&nbsp;12&nbsp;44&nbsp;90</a></p>
+                        <p><a href="mailto:hej@javacafe.dk">hej@javacafe.dk</a></p>
+                    </address>
 
                     <h3>Åbningstider</h3>
                     <dl class="hours-list">
@@ -264,7 +277,7 @@
                             <dd>09.00-16.00</dd>
                         </div>
                     </dl>
-                </address>
+                </div>
             </div>
         </section>
     </main>
@@ -274,8 +287,10 @@
         <div class="footer-inner">
             <p><strong>Java Café</strong> © 2026. Alle rettigheder forbeholdes.</p>
             <nav aria-label="Sociale medier">
-                <a href="https://www.instagram.com/" aria-label="Besøg Java Café på Instagram">Instagram</a>
-                <a href="https://www.facebook.com/" aria-label="Besøg Java Café på Facebook">Facebook</a>
+                <ul class="footer-nav-list">
+                    <li><a href="https://www.instagram.com/" aria-label="Åbn Instagram">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" aria-label="Åbn Facebook">Facebook</a></li>
+                </ul>
             </nav>
         </div>
     </footer>
