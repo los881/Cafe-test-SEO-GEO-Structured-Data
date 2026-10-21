@@ -418,31 +418,122 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
             {
-                "@type": "Question",
-                "name": "Hvornår har I åbent?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Se vores åbningstider under Kontakt."
+                "@id": "#java-cafe",
+                "@type": [
+                    "Organization",
+                    "CafeOrCoffeeShop"
+                ],
+                "name": "Java Café",
+                "description": "Java Café i Aarhus C byder på kaffe, bagværk og hyggelige stunder.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Ristestien 14",
+                    "postalCode": "8000",
+                    "addressLocality": "Aarhus C",
+                    "addressCountry": "DK"
+                },
+                "telephone": "+4532124490",
+                "email": "hej@javacafe.dk",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday"
+                        ],
+                        "opens": "07:30",
+                        "closes": "18:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Saturday",
+                        "opens": "08:30",
+                        "closes": "17:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Sunday",
+                        "opens": "09:00",
+                        "closes": "16:00"
+                    }
+                ],
+                "hasMenu": {
+                    "@id": "#menu",
+                    "@type": "Menu",
+                    "name": "Kaffe og lidt godt til."
                 }
             },
             {
-                "@type": "Question",
-                "name": "Må jeg amme min baby på jeres café?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ja, selvfølgelig. Vi har borde med lidt mere ro, hvis du ønsker det, men du er velkommen til at amme, hvor du vil."
+                "@id": "#website",
+                "@type": "WebSite",
+                "name": "Java Café",
+                "description": "Java Café i Aarhus C byder på kaffe, bagværk og hyggelige stunder. Se menu, åbningstider og kontakt.",
+                "inLanguage": "da",
+                "publisher": {
+                    "@id": "#java-cafe"
                 }
             },
             {
-                "@type": "Question",
-                "name": "Må jeg tage min hund med?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ja, din stille og rolige hund er velkommen ved et bord udenfor."
+                "@id": "#webpage",
+                "@type": "WebPage",
+                "name": "Java Café i Aarhus C | God kaffe og hyggelige stunder",
+                "description": "Java Café i Aarhus C byder på kaffe, bagværk og hyggelige stunder. Se menu, åbningstider og kontakt.",
+                "inLanguage": "da",
+                "isPartOf": {
+                    "@id": "#website"
+                },
+                "about": {
+                    "@id": "#java-cafe"
+                },
+                "mainEntity": {
+                    "@id": "#java-cafe"
+                },
+                "hasPart": {
+                    "@id": "#faq"
                 }
+            },
+            {
+                "@id": "#faq",
+                "@type": "FAQPage",
+                "name": "Spørgsmål om dit besøg",
+                "inLanguage": "da",
+                "isPartOf": {
+                    "@id": "#webpage"
+                },
+                "about": {
+                    "@id": "#java-cafe"
+                },
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Hvornår har I åbent?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Se vores åbningstider under Kontakt."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Må jeg amme min baby på jeres café?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, selvfølgelig. Vi har borde med lidt mere ro, hvis du ønsker det, men du er velkommen til at amme, hvor du vil."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Må jeg tage min hund med?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, din stille og rolige hund er velkommen ved et bord udenfor."
+                        }
+                    }
+                ]
             }
         ]
     }
