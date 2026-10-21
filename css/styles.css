@@ -38,7 +38,7 @@ body {
     margin: 0;
     background: var(--color-cream-soft);
     color: var(--color-brown-dark);
-    font-family: var(--font-sans);
+    font-family: var(--font-sans), sans-serif;
     font-size: 1rem;
     line-height: 1.6;
 }
